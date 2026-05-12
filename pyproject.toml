@@ -1,7 +1,14 @@
 [project]
 name = "dfba-batch-culture-simulation"
 version = "0.1.0"
-description = "Add your description here"
+description = "Computational modelling of aerobic-to-anaerobic respiratory transition in E. coli batch culture using Dynamic Flux Balance Analysis (dFBA). IF3211 Domain-Specific Computation."
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = []
+requires-python = ">=3.10"
+dependencies = [
+    "cobra>=0.29",
+    "scipy>=1.11",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "pip>=26.1.1",
+    "ipykernel>=7.2.0",
+]
