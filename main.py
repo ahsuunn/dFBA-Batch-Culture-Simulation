@@ -122,8 +122,9 @@ def main():
     X_arr = solution.y[0]
     O2_arr = solution.y[2]
 
+    # Avoid printing tiny negative floating-point artefacts as "-0.000000"
     print(f"  Final biomass    : {X_arr[-1]:.4f} g_DW/L")
-    print(f"  Final O2         : {O2_arr[-1]:.6f} mmol/L")
+    print(f"  Final O2         : {max(0.0, O2_arr[-1]):.6f} mmol/L")
     print(f"  Time steps       : {len(t_arr)}")
     if solution.t_events and len(solution.t_events[0]) > 0:
         print(f"  Substrate exhaustion at t = {solution.t_events[0][0]:.3f} h")

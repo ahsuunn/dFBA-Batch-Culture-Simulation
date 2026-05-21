@@ -19,7 +19,6 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from matplotlib.gridspec import GridSpec
 
-# pyrefly: ignore [missing-import]
 from src.config import (
     RESULTS_DIR,
     OXYGEN_0,
